@@ -11,11 +11,15 @@ result = $&lt;.read.gsub(/&lt;span jwcid="@Insert" value="ognl:([^"]+)"\/&gt;/) 
 	"${#{$1}}"
 end
 
-result = result.gsub(/&lt;span jwcid="@If" condition="ognl:([^"]+)"\/&gt;/) do |match|
+result = result.gsub(/&lt;span jwcid="@If" condition="ognl:([^"]+)"&gt;/) do |match|
 	"&lt;t:if test=\"#{$1}\"&gt;"
 end
 
-result = result.gsub(/&lt;span jwcid="@For" source="ognl:([^"]+)" value="ognl:([^"]+)"\/&gt;/) do |match|
+result = result.gsub(/&lt;span jwcid="@Else"&gt;/) do |match|
+	"&lt;p:else&gt;"
+end
+
+result = result.gsub(/&lt;span jwcid="@For" source="ognl:([^"]+)" value="ognl:([^"]+)"&gt;/) do |match|
 	"&lt;t:loop source=\"#{$1}\" value=\"#{$2}\"&gt;"
 end
 
@@ -27,9 +31,11 @@ puts result</string>
 	<key>keyEquivalent</key>
 	<string>^%</string>
 	<key>name</key>
-	<string>To T5</string>
+	<string>To T5 (almost)</string>
 	<key>output</key>
 	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>text.xhtml.tapestry</string>
 	<key>uuid</key>
 	<string>48FE75F8-3FC4-4A68-B7C2-D3E9AC8168A3</string>
 </dict>
