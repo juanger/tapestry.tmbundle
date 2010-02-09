@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Tapestry</string>
+	<key>ordering</key>
+	<array>
+		<string>D7DF5769-C598-43F8-B2B4-00320C432425</string>
+	</array>
+	<key>uuid</key>
+	<string>85B3EF26-D429-440D-9F7C-89A250F0F792</string>
+</dict>
+</plist>
