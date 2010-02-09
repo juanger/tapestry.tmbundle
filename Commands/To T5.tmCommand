@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#! /usr/bin/env ruby
+
+result = $&lt;.read.gsub(/&lt;span jwcid="@Insert" value="ognl:([^"]+)"\/&gt;/) do |match|
+	"${#{$1}}"
+end
+
+result = result.gsub(/&lt;span jwcid="@If" condition="ognl:([^"]+)"\/&gt;/) do |match|
+	"&lt;t:if test=\"#{$1}\"&gt;"
+end
+
+result = result.gsub(/&lt;span jwcid="@For" source="ognl:([^"]+)" value="ognl:([^"]+)"\/&gt;/) do |match|
+	"&lt;t:loop source=\"#{$1}\" value=\"#{$2}\"&gt;"
+end
+
+puts result</string>
+	<key>fallbackInput</key>
+	<string>document</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^%</string>
+	<key>name</key>
+	<string>To T5</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>uuid</key>
+	<string>48FE75F8-3FC4-4A68-B7C2-D3E9AC8168A3</string>
+</dict>
+</plist>
