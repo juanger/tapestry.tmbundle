@@ -7,23 +7,7 @@
 	<key>command</key>
 	<string>#! /usr/bin/env ruby
 
-result = $&lt;.read.gsub(/&lt;span jwcid="@Insert" value="ognl:([^"]+)"\/&gt;/) do |match|
-	"${#{$1}}"
-end
-
-result = result.gsub(/&lt;span jwcid="@If" condition="ognl:([^"]+)"&gt;/) do |match|
-	"&lt;t:if test=\"#{$1}\"&gt;"
-end
-
-result = result.gsub(/&lt;span jwcid="@Else"&gt;/) do |match|
-	"&lt;p:else&gt;"
-end
-
-result = result.gsub(/&lt;span jwcid="@For" source="ognl:([^"]+)" value="ognl:([^"]+)"&gt;/) do |match|
-	"&lt;t:loop source=\"#{$1}\" value=\"#{$2}\"&gt;"
-end
-
-puts result</string>
+require "#{ENV["TM_BUNDLE_SUPPORT"]}/lib/to_t5"</string>
 	<key>fallbackInput</key>
 	<string>document</string>
 	<key>input</key>
