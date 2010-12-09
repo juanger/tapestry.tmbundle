@@ -8,6 +8,8 @@
 &lt;/t:loop&gt;</string>
 	<key>name</key>
 	<string>loop</string>
+	<key>scope</key>
+	<string>text.xhtml.tapestry</string>
 	<key>tabTrigger</key>
 	<string>loop</string>
 	<key>uuid</key>

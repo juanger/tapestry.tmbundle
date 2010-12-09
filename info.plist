@@ -2,11 +2,28 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>mainMenu</key>
+	<dict>
+		<key>items</key>
+		<array>
+			<string>48FE75F8-3FC4-4A68-B7C2-D3E9AC8168A3</string>
+			<string>------------------------------------</string>
+			<string>9BAD49EF-831E-4F25-AA50-F04CF2E2793C</string>
+			<string>5F6EBE2F-C6F9-435C-92A4-3324999ECCAA</string>
+		</array>
+		<key>submenus</key>
+		<dict/>
+	</dict>
 	<key>name</key>
 	<string>Tapestry</string>
 	<key>ordering</key>
 	<array>
 		<string>D7DF5769-C598-43F8-B2B4-00320C432425</string>
+		<string>48FE75F8-3FC4-4A68-B7C2-D3E9AC8168A3</string>
+		<string>E8C1677D-B4A0-48A3-AC14-3B3EF881E784</string>
+		<string>5F6EBE2F-C6F9-435C-92A4-3324999ECCAA</string>
+		<string>9BAD49EF-831E-4F25-AA50-F04CF2E2793C</string>
+		<string>C998DF61-25C2-4FE3-B3AF-B2B191A7DD32</string>
 	</array>
 	<key>uuid</key>
 	<string>85B3EF26-D429-440D-9F7C-89A250F0F792</string>
