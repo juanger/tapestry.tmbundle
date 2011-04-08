@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;t:label for="${1:label}"/&gt;
+&lt;t:select t:id="$1" label="${2:${1/./\u$0/}}" value="$3"
+		 model="$4" ${5:blankOption="ALWAYS" validate="${6:required}" ${7:disabled="isDisabled}"}/&gt;</string>
+	<key>name</key>
+	<string>select</string>
+	<key>scope</key>
+	<string>text.xhtml.tapestry</string>
+	<key>tabTrigger</key>
+	<string>select</string>
+	<key>uuid</key>
+	<string>333EB7B4-2E5B-4DE5-B3F3-7200413595B4</string>
+</dict>
+</plist>

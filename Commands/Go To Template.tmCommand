@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+require "#{ENV['TM_SUPPORT_PATH']}/lib/textmate.rb"
+
+TEMPLATE_PATH = ENV["TM_FILEPATH"].gsub(/java$/,'tml').gsub('java', 'resources')
+
+TextMate.go_to :file =&gt; TEMPLATE_PATH
+</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@D</string>
+	<key>name</key>
+	<string>Go To Template</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.java</string>
+	<key>uuid</key>
+	<string>D1DDA1C7-7CE4-45A6-B21C-E39D013B6614</string>
+</dict>
+</plist>

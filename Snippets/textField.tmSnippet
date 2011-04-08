@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;t:label for="${1:label}"/&gt;
+&lt;t:textfield t:id="$1" label="${2:${1/./\u$0/}}" value="$3" ${4:validate="maxLength=10"}/&gt;
+</string>
+	<key>name</key>
+	<string>textField</string>
+	<key>scope</key>
+	<string>text.xhtml.tapestry</string>
+	<key>tabTrigger</key>
+	<string>text</string>
+	<key>uuid</key>
+	<string>FD4CADF7-4E80-4596-924F-DB11CEE6E096</string>
+</dict>
+</plist>
