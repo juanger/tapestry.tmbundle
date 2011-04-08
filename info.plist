@@ -8,11 +8,26 @@
 		<array>
 			<string>48FE75F8-3FC4-4A68-B7C2-D3E9AC8168A3</string>
 			<string>------------------------------------</string>
-			<string>9BAD49EF-831E-4F25-AA50-F04CF2E2793C</string>
-			<string>5F6EBE2F-C6F9-435C-92A4-3324999ECCAA</string>
+			<string>D1DDA1C7-7CE4-45A6-B21C-E39D013B6614</string>
+			<string>1E1CFD59-B188-4978-B630-0137E1D597B5</string>
+			<string>70EB1657-7934-4288-9664-4F15796AF1F2</string>
 		</array>
 		<key>submenus</key>
-		<dict/>
+		<dict>
+			<key>70EB1657-7934-4288-9664-4F15796AF1F2</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>9BAD49EF-831E-4F25-AA50-F04CF2E2793C</string>
+					<string>5F6EBE2F-C6F9-435C-92A4-3324999ECCAA</string>
+					<string>333EB7B4-2E5B-4DE5-B3F3-7200413595B4</string>
+					<string>FD4CADF7-4E80-4596-924F-DB11CEE6E096</string>
+					<string>55047B1A-AAE5-4F89-9160-0F435682C7FD</string>
+				</array>
+				<key>name</key>
+				<string>Templates</string>
+			</dict>
+		</dict>
 	</dict>
 	<key>name</key>
 	<string>Tapestry</string>
